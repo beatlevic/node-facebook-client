@@ -1,7 +1,10 @@
 node-facebook-client README
 ===========================
 
-Version: 1.4.0
+Version: 1.5.0
+
+This version is forked from dracoblue, and contains some timeout fixes.
+npm package is called facebook-client-bn
 
 Official Site: <http://dracoblue.net/>
 
