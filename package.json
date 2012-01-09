@@ -1,6 +1,6 @@
 {
     "name" : "facebook-client-bn",
-    "version": "1.5.0",
+    "version": "1.5.2",
 
     "engines": { "node": ">= 0.4.0" },
 
@@ -11,7 +11,8 @@
     "author": "Beatlevic <beatlevic@gmail.com>",
     "contributors": [
         { "name": "DracoBlue", "email": "JanS@DracoBlue.de" },
-        { "name": "jharlap" }
+        { "name": "jharlap" },
+        { "name": "liuliu" }
     ],
 
     "keywords": ["facebook", "oauth", "client"],
@@ -30,7 +31,7 @@
     },
 
     "bugs": {
-        "url": "http://github.com/beatlevic/node-facebook-client/issues"
+        "url": "http://github.com/DracoBlue/node-facebook-client/issues"
     },
 
     "licenses" : [

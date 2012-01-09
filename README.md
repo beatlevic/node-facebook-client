@@ -1,7 +1,7 @@
 node-facebook-client README
 ===========================
 
-Version: 1.5.0
+Version: 1.5.2
 
 This version is forked from dracoblue, and contains some timeout fixes.
 npm package is called facebook-client-bn
@@ -28,12 +28,12 @@ This small example uses the FacebookClient class to retrieve the name of a
 user. requst.headers are the headers from the server request.
 
     var FacebookClient = require("facebook-client").FacebookClient;
-    
+
     var facebook_client = new FacebookClient(
         "yourappid", // configure like your fb app page states
         "yourappsecret" // configure like your fb app page states
     );
-    
+
     facebook_client.getSessionByRequestHeaders(request.headers)(function(facebook_session) {
         facebook_session.graphCall("/me", {
         })(function(result) {
@@ -43,7 +43,7 @@ user. requst.headers are the headers from the server request.
             console.log('The new feed post id is: ' + result.id);
         });
     });
-    
+
 A full example may be executed with: `node run_example.js`. Please configure `yourappid`+`yourappsecret` in that file first.
 
 ## Graph API
@@ -53,7 +53,7 @@ A full example may be executed with: `node run_example.js`. Please configure `yo
 Doing a call against the graph server.
 
     client.graphCall(path, params, method)(function(result) {
-        // 
+        //
     });
 
 The parameter `method` can be omitted and is 'GET' in this case.
@@ -107,8 +107,7 @@ Retrieving the id of the session.
 
 ### FacebookSession#getMeta()
 
-Tries to retrieve all data from the graph call /me for the user. This is
-_only_ available in case of a session, which got initialized by an access_token.
+Tries to retrieve all data from the graph call /me for the user.
 
     session.getMeta()(function(user_data) {
         // work with it
@@ -122,9 +121,9 @@ Retrieving an AccessToken with the given parameters. You don't need to use this
 function if you used `FacebookClient#getSessionByRequestHeaders`.
 
     client.getAccessToken(access_params)(function(access_token, expires) {
-        // 
+        //
     });
-    
+
 ### FacebookSession#retrieveAccessToken(code, redirect_uri)
 
 Retrieve an access token by providing a code and a redirect_uri. Usually from
@@ -149,6 +148,15 @@ Calculates the signature for a given set of parameters and the api_secret.
 Changelog
 ---------
 
+- 1.5.2 (2012/01/07)
+  - added multiquery-support for graphCall #12
+- 1.5.1 (2012/01/06)
+  - fixed isValid: throwed an exception, when user_data.error was not existant
+  - added backward compatibility for node 0.4.x, if toString('hex') was missing
+- 1.5.0 (2012/01/05)
+  - added support for fbsr-cookie from new facebook auth #16
+  - added support for lazy-access-token retrieval if oauth-code is given
+  - added timeout of 10 seconds for each call against facebook #15
 - 1.4.0 (2011/10/06)
   - added multiquery-support. #12
 - 1.3.0 (2011/04/26)
@@ -170,6 +178,7 @@ Contributors
 
 - DracoBlue http://dracoblue.net
 - jharlap https://github.com/jharlap
+- liuliu https://github.com/liuliu
 
 License
 --------
