@@ -6,7 +6,7 @@
 
     "homepage": "http://bottlenose.com",
 
-    "description": "A javascript (nodejs) implementation of facebook's client for oauth and rest+graph api.",
+    "description": "A fork of the original facebook-client. A javascript (nodejs) implementation of facebook's client for oauth and rest+graph api.",
 
     "author": "Beatlevic <beatlevic@gmail.com>",
     "contributors": [
@@ -30,7 +30,7 @@
     },
 
     "bugs": {
-        "web": "http://github.com/beatlevic/node-facebook-client/issues"
+        "url": "http://github.com/beatlevic/node-facebook-client/issues"
     },
 
     "licenses" : [
