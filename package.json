@@ -1,5 +1,5 @@
 {
-  "name" : "facebook-client-bn",
+  "name" : "facebook-client",
   "version": "1.6.1",
 
   "engines": { "node": ">= 0.4.0" },
