@@ -1,40 +1,42 @@
 {
-    "name" : "facebook-client-bn",
-    "version": "1.5.2",
+  "name" : "facebook-client-bn",
+  "version": "1.6.1",
 
-    "engines": { "node": ">= 0.4.0" },
+  "engines": { "node": ">= 0.4.0" },
 
-    "homepage": "http://bottlenose.com",
+  "homepage": "http://bottlenose.com",
 
-    "description": "A fork of the original facebook-client. A javascript (nodejs) implementation of facebook's client for oauth and rest+graph api.",
+  "description": "A fork of the original facebook-client. A javascript (nodejs) implementation of facebook's client for oauth and rest+graph api.",
 
-    "author": "Beatlevic <beatlevic@gmail.com>",
-    "contributors": [
-        { "name": "DracoBlue", "email": "JanS@DracoBlue.de" },
-        { "name": "jharlap" },
-        { "name": "liuliu" }
-    ],
+  "author": "Beatlevic <beatlevic@gmail.com>",
+  "contributors": [
+    { "name": "DracoBlue", "email": "JanS@DracoBlue.de" },
+    { "name": "jharlap" },
+    { "name": "liuliu" },
+    { "name": "kaareal" },
+    { "name": "leoasis" }
+  ],
 
-    "keywords": ["facebook", "oauth", "client"],
+  "keywords": ["facebook", "oauth", "client"],
 
-    "directories" : {
-    },
+  "directories" : {
+  },
 
-    "main" : "lib/facebook-client/index.js",
+  "main" : "lib/facebook-client/index.js",
 
-    "bin" : {
-    },
+  "bin" : {
+  },
 
-    "repository": {
-        "type": "git",
-        "web": "http://github.com/beatlevic/node-facebook-client.git"
-    },
+  "repository": {
+    "type": "git",
+    "web": "http://github.com/beatlevic/node-facebook-client.git"
+  },
 
-    "bugs": {
-        "url": "http://github.com/DracoBlue/node-facebook-client/issues"
-    },
+  "bugs": {
+    "url": "http://github.com/DracoBlue/node-facebook-client/issues"
+  },
 
-    "licenses" : [
-        { "type" : "MIT",  "url" : "http://github.com/beatlevic/node-facebook-client/blob/master/LICENSE" }
-    ]
+  "licenses" : [
+    { "type" : "MIT",  "url" : "http://github.com/beatlevic/node-facebook-client/blob/master/LICENSE" }
+  ]
 }
